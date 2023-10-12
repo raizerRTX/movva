@@ -1,7 +1,5 @@
 # Movva: Driver Violation Monitoring System
 
-![Movva Logo](images/movva-logo.png)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
