@@ -29,7 +29,7 @@ To get started with Movva, follow these steps:
 
 ### Prerequisites
 
-- [System Requirements] - List any hardware or software requirements.
+- [System Requirements] - Works on any device platform as long as it has internet connection
 
 ### Installation
 
