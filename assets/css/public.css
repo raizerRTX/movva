@@ -1,0 +1,840 @@
+body {
+    font-family: Century Gothic;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+:root {
+    --body-font: 'Poppins', sans-serif;
+}
+
+div.container {
+    /* border: 1px solid red; */
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.footer {
+    height: 350px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.gender-chart {
+    height: 95%;
+    width: 30%;
+    margin-left: 5px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    pointer-events: auto;
+    animation-name: displayBox4;
+    animation-duration: 4s;
+}
+
+div.age-chart {
+    height: 95%;
+    width: 35%;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    pointer-events: auto;
+    animation-name: displayBox4;
+    animation-duration: 4s;
+}
+
+div.vehicle-class {
+    height: 95%;
+    width: 30%;
+    margin-right: 9px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    pointer-events: auto;
+    animation-name: displayBox4;
+    animation-duration: 4s;
+}
+
+
+nav.nav {
+    height: 10vh;
+    width: 100%;
+    background-color: #d93025;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+div.logo {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    margin-left: 1rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgb(5, 5, 5);
+}
+
+div.nav-text {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    /* border: 1px solid blue; */
+    height: 85%;
+    width: 7%;
+}
+
+div.separator {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    /* border: 1px solid blue; */
+    height: 85%;
+    width: 60%;
+}
+
+div.nav-date {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 25%;
+}
+
+div.first-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40%;
+    width: 99%;
+    /* border: 1px solid blue; */
+}
+
+div.second-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    height: 57%;
+    width: 99%;
+    /* border: 1px solid blue; */
+}
+
+div.total-violator {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    height: 94%;
+    width: 49%;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    pointer-events: auto;
+    animation-name: displayBox4;
+    animation-duration: 4s;
+}
+
+div.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Century Gothic;
+    font-size: x-large;
+    /* border: 1px solid gold; */
+    height: 100%;
+    width: 100%;
+}
+
+div.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    font-family: var(--body-font);
+}
+
+div.violations-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    height: 94%;
+    width: 49%;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    animation-name: displayBox5;
+    animation-duration: 4s;
+}
+
+div.top-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    animation-name: displayBox3;
+    animation-duration: 4s;
+}
+
+div.cluster-box {
+    display: flex;
+    margin-left: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 15%;
+    /* border: 1px solid yellow; */
+}
+
+div.box {
+    font-family: Century Gothic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.3rem;
+    height: 48%;
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    cursor: pointer;
+    animation-name: displayBox1;
+    animation-duration: 4s;
+}
+
+div.top-violation {
+    margin-left: 1.5rem;
+    font-family: Century Gothic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+    animation-name: displayBox2;
+    animation-duration: 4s;
+}
+
+div.panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+div.label-area {
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid orange; */
+    overflow: auto;
+}
+
+div.chart-area {
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid orange; */
+}
+
+div.legend_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid red;  */
+    width: 100%; 
+    height: 11%;
+    margin-bottom: 10px;
+}
+
+span.color-box {
+    height: 38px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+div.legend-text {
+    height: 100%;
+    width: 80%;
+    /* border: 0.5px solid orange; */
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.modal-nav {
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+div.modal-graph {
+    display: flex;
+    flex-direction: row;
+    height: 480px;
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    box-shadow: 1px 2px 3px grey;
+}
+
+div.date_panel {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    width: 30%;
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+}
+
+.title_bar {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.single-progressbar {
+    margin-bottom: 30px;
+}
+
+@keyframes display {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: pink;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes displayBox1 {
+    0% {
+       transform: translate(0, 50px);
+    }
+}
+
+@keyframes displayBox2 {
+    0% {
+        transform: translate(100px, 0);
+    }
+}
+
+@keyframes displayBox3 {
+    0% {
+       transform: translate(-100px, 0);
+    }
+}
+
+@keyframes displayBox4 {
+    0% {
+       transform: translate(-100px, 0);
+    }
+}
+
+@keyframes displayBox5 {
+    0% {
+       transform: translate(100px, 0);
+    }
+}
+
+@media only screen and (max-width: 1541px) {
+    #date {
+        font-size: medium;
+        margin-bottom: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+   div.logo {
+        width: 5%;    
+   }
+}
+
+@media only screen and (max-width: 1105px) {
+    div.logo {
+        width: 6%;    
+    }
+
+    #title {
+        font-size: medium;
+    }
+
+    .header-text {
+        font-size: small;
+    }
+
+    div.container {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 988px) {
+    div.container {
+        height: 97vh;
+    }
+}
+
+@media only screen and (max-width: 1049px) {
+    #date {
+        font-size: medium;
+        margin-bottom: 1.7rem;
+    }
+
+    div.logo {
+        height: 58px;
+    }
+
+    #title {
+        font-size: medium;
+    }
+
+    #prone_place {
+        font-size: medium;
+    }
+
+    #vehicle_type {
+        font-size: medium;
+    }
+
+    .header-text {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    div.logo {
+        width: 7%;
+    }
+
+    div.container {
+        height: 85vh;
+    }
+}
+
+@media only screen and (max-width: 914px) {
+    #date {
+        font-size: small;
+        margin-bottom: 1.3rem;
+    }
+
+    .header-text {
+        font-size: smaller;
+    }
+}   
+
+@media only screen and (max-width: 826px) {
+    .header-text {
+        font-size: x-small;
+    }
+
+    #title {
+        font-size: smaller;
+    }
+
+    div.logo {
+        width: 6%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.logo {
+        width: 8%;
+    }
+
+    div.container {
+        height: 80vh;
+    }
+
+    div.separator {
+        width: 55%;
+    }
+
+    #date {
+        font-size: smaller;
+        margin-bottom: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.container {
+        height: 85vh;
+    }
+}  
+
+@media only screen and (max-width: 762px) {
+    #date {
+        font-size: x-small;
+    }
+}  
+
+@media only screen and (max-width: 688px) {
+    .header-text {
+        font-size: xx-small;
+    }
+
+    #title {
+        font-size: x-small;
+    }
+
+    div.logo {
+        width: 7%;
+    }
+
+    div.box {
+        height: 46%;
+    }
+
+    div.total-violator {
+        width: 48%;
+        height: 90%;
+    }
+
+    div.violations-summary {
+        width: 48%;
+        height: 90%;
+    }
+
+}  
+
+@media only screen and (max-width: 648px) {
+    div.container {
+        height: 2910px;
+    }
+
+    #date {
+        font-size: medium;
+    }
+
+    .header-text {
+        font-size: medium;
+    }
+
+    div.separator {
+        width: 30%;
+    }
+
+    div.nav-date {
+        width: 40%;
+    }
+
+    div.nav-text {
+        width: 17%;
+    }
+
+    #title {
+        font-size: large;
+    }
+
+    div.logo {
+        width: 10%;
+    }
+
+    div.first-box {
+        flex-direction: column;
+        align-items: center;
+        height: 40%;
+    }
+
+    div.second-box {
+        height: 60%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.total-violator {
+        width: 90%;
+    }
+
+    div.violations-summary {
+        width: 90%;
+    }
+
+    div.top-place {
+        width: 80%;
+        height: 50%;
+        margin-bottom: 1rem;
+    }
+
+    div.cluster-box {
+        margin: 0;
+        justify-content:last baseline;
+        flex-direction: row;
+        height: 35%;
+        width: 85%;
+        margin-bottom: 1rem;
+    }
+
+    div.box {
+        height: 90%;
+        margin: 1rem;
+    }
+
+    div.top-violation {
+        margin: 0;
+        height: 40%;
+        width: 85%;
+    }
+
+}  
+
+@media only screen and (max-width: 585px) {
+    #date {
+        font-size: small;
+    }
+
+    #header_1 {
+        font-size: small;
+        font-weight: bolder;
+    }
+
+    #header_2 {
+        font-size: small;
+        font-weight: bolder;
+    }
+
+    #header_3 {
+        font-size: small;
+        font-weight: bolder;
+    }
+
+    #header_4 {
+        font-size: small;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (max-width: 478px) { 
+    div.logo {
+        width: 12%;
+    }
+
+    div.separator {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 457px) { 
+    #date {
+        font-size: smaller;
+    }
+
+    div.nav-date {
+        width: 45%;
+    }
+
+    div.separator {
+        width: 17%;
+    }
+}
+
+@media only screen and (max-width: 426px) { 
+    div.nav-date {
+        width: 46%;
+    }
+
+    div.separator {
+        width: 16%;
+    }
+}
+
+@media only screen and (max-width: 417px) { 
+    div.nav-date {
+        width: 47%;
+    }
+
+    div.separator {
+        width: 15%;
+    }
+
+    #title {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 408px) { 
+
+    div.nav-date {
+        width: 49%;
+    }
+
+    div.separator {
+        width: 13%;
+    }
+}
+
+@media only screen and (max-width: 431px) { 
+    div.top-violation {
+        height: 40%;
+    }
+
+    div.gender-chart {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    div.age-chart {
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+    div.vehicle-class {
+        margin-bottom: 1rem;
+        width: 90%;
+        margin-right: 0;
+    }
+
+    div.cluster-box {
+        height: 250px;
+        font-size: xx-small;
+        margin-bottom: 2rem;
+    }
+
+    div.footer {
+        flex-direction: column;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 377px) { 
+    div.logo {
+        width: 14%;
+    }
+
+    div.nav-date {
+        width: 51%;
+    }
+
+    div.separator {
+        width: 6%;
+    }
+
+    #date {
+        font-size: smaller;
+    }
+
+    #header_2 {
+        font-size: x-small;
+    }
+
+    #header_1 {
+        font-size: x-small;
+    }
+
+}
+
+@media only screen and (max-width: 370px) { 
+    div.nav-date {
+        width: 54%;
+    }
+
+    div.separator {
+        width: 4%;
+    }
+
+    #header_3 {
+        font-size: x-small;
+    }
+
+    #header_4 {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 340px) { 
+    #date {
+        font-size: xx-small;
+    }
+
+    div.logo {
+        width: 16%;
+    }
+
+    div.nav-date {
+        width: 50%;
+    }
+
+    div.separator {
+        width: 4%;
+    }
+
+    #header_2 {
+        font-size: xx-small;
+    }
+
+    #header_1 {
+        font-size: xx-small;
+    }
+
+    #header_3 {
+        font-size: xx-small;
+    }
+
+    #header_4 {
+        font-size: xx-small;
+    }
+}
